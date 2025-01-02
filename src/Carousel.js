@@ -55,3 +55,8 @@ return (
     <div className="my-carousel" {...props}>
           <div className="carousel-track">
           {React.Children.map(children, (child, index) => {
+            return (
+                <div
+                  className="carousel-slide"
+                  style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
+                >
