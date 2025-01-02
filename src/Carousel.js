@@ -51,3 +51,7 @@ const Carousel = ({
 }, []);
 const totalSlides = React.Children.count(children);
 
+return (
+    <div className="my-carousel" {...props}>
+          <div className="carousel-track">
+          {React.Children.map(children, (child, index) => {
