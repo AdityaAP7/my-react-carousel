@@ -45,4 +45,5 @@ const Carousel = ({
         goToNext();
       }, autoPlayInterval);
     };
-  
+  // Cleanup on unmount
+  useEffect(() => {
