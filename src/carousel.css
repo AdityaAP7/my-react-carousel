@@ -33,4 +33,13 @@
   .carousel-indicators {
     text-align: center;
     margin-top: 10px;
+  }.indicator {
+    background-color: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
   }
