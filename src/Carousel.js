@@ -47,3 +47,5 @@ const Carousel = ({
     };
   // Cleanup on unmount
   useEffect(() => {
+    return () => clearTimeout(timeoutRef.current);
+}, []);
