@@ -26,4 +26,6 @@
     z-index: 10;
   }.arrow.prev {
     left: 10px;
+  }.arrow.next {
+    right: 10px;
   }
