@@ -76,3 +76,9 @@ return (
         </>
       )}   {showIndicators && ( <div className="carousel-indicators"></div>
         {Array.from({ length: totalSlides }).map((_, index) => (
+
+            <button
+            key={index}
+            className={`indicator ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => goToIndex(index)}
+          />
