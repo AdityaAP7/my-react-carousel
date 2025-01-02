@@ -87,3 +87,13 @@ return (
       </div>
     );
   };
+  Carousel.propTypes = {
+    children: PropTypes.node.isRequired,
+    autoPlay: PropTypes.bool,
+    autoPlayInterval: PropTypes.number,
+    showArrows: PropTypes.bool,
+    showIndicators: PropTypes.bool,
+    infiniteLoop: PropTypes.bool,
+  };
+  
+  export default Carousel;
