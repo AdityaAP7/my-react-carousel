@@ -35,3 +35,5 @@ const Carousel = ({
     const goToIndex = (index) => {
         setCurrentIndex(index);
       };
+       // Handle autoPlay
+  useEffect(() => {
