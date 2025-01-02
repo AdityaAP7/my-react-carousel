@@ -30,3 +30,8 @@ const Carousel = ({
         : prevIndex - 1
     );
   };
+
+    // Jump to specific index
+    const goToIndex = (index) => {
+        setCurrentIndex(index);
+      };
