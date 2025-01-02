@@ -14,4 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffffaa;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    z-index: 10;
   }
