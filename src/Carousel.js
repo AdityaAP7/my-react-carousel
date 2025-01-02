@@ -22,3 +22,11 @@ const Carousel = ({
         : prevIndex + 1
     );
   };
+   // Move to previous slide
+   const goToPrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
+        : prevIndex - 1
+    );
+  };
