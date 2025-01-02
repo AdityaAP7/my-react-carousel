@@ -65,3 +65,13 @@ return (
           );
         })}
       </div>
+      {showArrows && (
+        <>
+          <button className="arrow prev" onClick={goToPrev}>
+            ❮
+          </button>
+          <button className="arrow next" onClick={goToNext}>
+            ❯
+          </button>
+        </>
+      )}
