@@ -74,4 +74,4 @@ return (
             ❯
           </button>
         </>
-      )}
+      )}   {showIndicators && (
