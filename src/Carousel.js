@@ -74,4 +74,4 @@ return (
             ❯
           </button>
         </>
-      )}   {showIndicators && (
+      )}   {showIndicators && ( <div className="carousel-indicators"></div>
