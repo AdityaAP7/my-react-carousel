@@ -49,3 +49,5 @@ const Carousel = ({
   useEffect(() => {
     return () => clearTimeout(timeoutRef.current);
 }, []);
+const totalSlides = React.Children.count(children);
+
