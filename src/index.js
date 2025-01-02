@@ -8,4 +8,4 @@ import { Carousel } from 'my-react-carousel';
 import './App.css';
 
 function App() {return (
-<div className="App"></div>
+<div className="App">  <h1>Testing My React Carousel</h1>
