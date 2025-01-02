@@ -42,4 +42,6 @@
     margin: 5px;
     cursor: pointer;
     outline: none;
+  }.indicator.active {
+    background-color: #555;
   }
