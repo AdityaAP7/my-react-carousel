@@ -60,3 +60,8 @@ return (
                   className="carousel-slide"
                   style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
                 >
+                     {child}
+            </div>
+          );
+        })}
+      </div>
