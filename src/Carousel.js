@@ -75,3 +75,4 @@ return (
           </button>
         </>
       )}   {showIndicators && ( <div className="carousel-indicators"></div>
+        {Array.from({ length: totalSlides }).map((_, index) => (
