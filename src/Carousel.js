@@ -81,4 +81,9 @@ return (
             key={index}
             className={`indicator ${index === currentIndex ? 'active' : ''}`}
             onClick={() => goToIndex(index)}
-          />
+          />  ))}
+          </div>
+        )}
+      </div>
+    );
+  };
