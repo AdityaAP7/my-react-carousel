@@ -29,3 +29,8 @@
   }.arrow.next {
     right: 10px;
   }
+  /* Indicators */
+  .carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
