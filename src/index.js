@@ -7,3 +7,5 @@ import { Carousel } from 'my-react-carousel';
 
 import './App.css';
 
+function App() {
+
