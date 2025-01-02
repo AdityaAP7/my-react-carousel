@@ -40,3 +40,5 @@ const Carousel = ({
     resetAutoPlay();
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay]);
+  const resetAutoPlay = () => {
+    clearTimeout(timeoutRef.current);
