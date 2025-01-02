@@ -1,5 +1,18 @@
 {
-  "dependencies": {
-    "my-react-carousel": "^1.5.0"
-  }
+  "name": "my-react-carousel",
+  "version": "1.0.0",
+  "description": "A reusable React Carousel component",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "start": "run-p start:lib start:example",
+    "start:lib": "rollup -c -w",
+    "start:example": "cd example && npm start",
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  ...
 }
