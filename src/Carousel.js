@@ -36,4 +36,7 @@ const Carousel = ({
         setCurrentIndex(index);
       };
        // Handle autoPlay
-  useEffect(() => {
+  useEffect(() => {if (!autoPlay) return;
+    resetAutoPlay();
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay]);
