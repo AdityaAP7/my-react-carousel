@@ -62,7 +62,14 @@ const Carousel = ({
         : prevIndex + 1
     );
   };
-
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === React.Children.count(children) - 1
+        ? (infiniteLoop ? 0 : prevIndex)
+        : prevIndex + 1
+    );
+  };
+   // Move to 
   // Move to next slide
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
