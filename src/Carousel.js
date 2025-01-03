@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
 
 const Carousel = ({
     children,
