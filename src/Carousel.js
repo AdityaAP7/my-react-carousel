@@ -62,6 +62,9 @@ const Carousel = ({
         : prevIndex + 1
     );
   };
+    setCurrentIndex((prevIndex) =>
+      prevIndex === React.Children.count(children) - 1
+        ? (infiniteLoop ? 0 : prevIndex)
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === React.Children.count(children) - 1
