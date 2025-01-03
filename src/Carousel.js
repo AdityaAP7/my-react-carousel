@@ -116,7 +116,14 @@ const Carousel = ({
 const totalSlides = React.Children.count(children);
 
 return (
-    <div className="my-carousel" {...props}>
+    <div className="my-carousel" {...props}>                <div
+                  className="carousel-slide"
+                  style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
+                >
+                     {child}
+            </div>
+          );
+        })}
           <div className="carousel-track">
           {React.Children.map(children, (child, index) => {
             return (
