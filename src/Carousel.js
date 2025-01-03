@@ -12,6 +12,7 @@ const Carousel = ({
     infiniteLoop = false,
     ...props
   }) => {
+      // Move to next slide
 const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
 
