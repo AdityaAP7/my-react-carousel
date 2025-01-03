@@ -95,6 +95,11 @@ const Carousel = ({
         setCurrentIndex(index);
       };
        // Handle autoPlay
+    // Jump to specific index
+    const goToIndex = (index) => {
+        setCurrentIndex(index);
+      };
+       // Handle autoPlay
   useEffect(() => {if (!autoPlay) return;
     resetAutoPlay();
     return () => clearTimeout(timeoutRef.current);
