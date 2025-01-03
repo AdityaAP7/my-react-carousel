@@ -5,6 +5,12 @@ resetAutoPlay();
 import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
 import PropTypes from 'prop-types';
 import PropTypes from 'prop-types';
+                                         return () => clearTimeout(timeoutRef.current);// Handle autoPlay
+  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
+      };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
+import PropTypes from 'prop-types';
+import PropTypes from 'prop-type
 
 const Carousel = ({
     children,
