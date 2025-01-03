@@ -13,6 +13,9 @@ const Carousel = ({
     ...props
   }) => {
       // Move to next slide
+    const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+ 
 const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
 
