@@ -1,4 +1,5 @@
-// Handle autoPlay
+resetAutoPlay();
+    return () => clearTimeout(timeoutRef.current);// Handle autoPlay
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
       };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
 import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
