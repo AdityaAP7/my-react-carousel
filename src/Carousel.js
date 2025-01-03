@@ -32,7 +32,11 @@ const Carousel = ({
   }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
-
+     prevIndex === React.Children.count(children) - 1
+        ? (infiniteLoop ? 0 : prevIndex)
+        : prevIndex + 1
+    );
+  };
 
   // Move to next slide
   const goToNext = () => {
