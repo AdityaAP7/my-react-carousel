@@ -96,6 +96,8 @@ const Carousel = ({
       };
        // Handle autoPlay
     // Jump to specific index
+    // Jump to specific index
+                                      
     const goToIndex = (index) => {
         setCurrentIndex(index);
       };
