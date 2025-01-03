@@ -15,6 +15,14 @@ const Carousel = ({
       // Move to next slide
     const goToNext = () => {
     setCurrentIndex((prevIndex) =>
+        // Move to previous slide
+   const goToPrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
+        : prevIndex - 1
+    );
+  };
  
 const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
