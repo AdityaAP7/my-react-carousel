@@ -12,6 +12,9 @@ const Carousel = ({
     infiniteLoop = false,
     ...props
   }) => {
+const [currentIndex, setCurrentIndex] = useState(0);
+    const timeoutRef = useRef(null);
+
 
 
 const Carousel = ({
