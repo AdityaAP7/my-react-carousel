@@ -124,6 +124,8 @@ c(index);
       }, autoPlayInterval);
     };
   // Cleanup on unmount
+                                          setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
   useEffect(() => {
     return () => clearTimeout(timeoutRef.current);
 }, []);
