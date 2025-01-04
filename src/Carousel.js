@@ -88,6 +88,10 @@ const Carousel = ({
    // Move to previous slide
    const goToPrev = () => {
     setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
+                                         return () => clearTimeout(timeoutRef.current);// Handle autoPlay
+  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
+      };const goToIndex = (index) => {impor
       prevIndex === 0
         ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
         : prevIndex - 1
@@ -95,8 +99,7 @@ const Carousel = ({
   };
 
     // Jump to specific index
-    const goToIndex = (index) => {
-        setCurrentIndex(index);
+c(index);
       };
        // Handle autoPlay
     // Jump to specific index
