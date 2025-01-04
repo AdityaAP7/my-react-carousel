@@ -116,6 +116,8 @@ c(index);
        // Handle autoPlay
   useEffect(() => {if (!autoPlay) return;
     resetAutoPlay();
+                       setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay]);
   const resetAutoPlay = () => {
