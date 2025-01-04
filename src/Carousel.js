@@ -96,7 +96,8 @@ const Carousel = ({
                                          return () => clearTimeout(timeoutRef.current);// Handle autoPlay
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
       };const goToIndex = (index) => {impor
-      prevIndex === 0
+      
+                                              : prevIndex + 1prevIndex === 0
         ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
         : prevIndex - 1
     );
