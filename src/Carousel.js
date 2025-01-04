@@ -101,7 +101,8 @@ const Carousel = ({
         : prevIndex - 1
     );
   };
-
+    setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
     // Jump to specific index
 c(index);
       };
