@@ -3,7 +3,9 @@ resetAutoPlay();
       };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
 import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
 import PropTypes from 'prop-types';
-                     
+            };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
+import PropTypes from 'prop-types';               
                                        
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
      
