@@ -4,7 +4,7 @@ resetAutoPlay();
 import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
 import PropTypes from 'prop-types';
                                       rt PropTypes from 'prop-types';
-                                         return () => clearTimeout(timeoutRef.current);// Handle autoPlay
+                                       
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
       };const goToIndex = (index) => {impor
 import PropTypes from 'prop-types';
