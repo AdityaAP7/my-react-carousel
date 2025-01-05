@@ -162,7 +162,9 @@ return (
                 <div
                      {child}
             </div>
-          );
+          );     </div>
+      {showArrows && (
+        <>
         })}
       </div>
       {showArrows && (
