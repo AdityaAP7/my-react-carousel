@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
                                        
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
      
-import PropTypes from 'prop-types';
                                          return () => clearTimeout
                                              import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
 import PropTypes from 'prop-types';
