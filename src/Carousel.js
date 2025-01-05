@@ -119,7 +119,9 @@ c(index);
       };
        // Handle autoPlay
   useEffect(() => {if (!autoPlay) return;
-    resetAutoPlay();
+    resetAutoPlay(); rt PropTypes from 'prop-types';
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay]);
                        setCurrentIndex((prevIndex) =>
         rt PropTypes from 'prop-types';
     return () => clearTimeout(timeoutRef.current);
