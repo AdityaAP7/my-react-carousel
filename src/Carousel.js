@@ -47,7 +47,9 @@ const [currentIndex, setCurrentIndex] = useState(0);
  
 const [currentIndex, setCurrentIndex] = useState(0);
     const timeoutRef = useRef(null);
-
+import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
+import PropTypes from 'prop-types';
+                     
 
 
 const Carousel = ({
