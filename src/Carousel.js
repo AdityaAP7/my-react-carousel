@@ -123,7 +123,9 @@ c(index);
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay]);
   const resetAutoPlay = () => {
-    clearTimeout(timeoutRef.current);timeoutRef.current = setTimeout(() => {
+    clearTimeout(timeoutRef.current);timeoutRef.current = setTimeout(() => {       rt PropTypes from 'prop-types';
+                                         return () => clearTimeout(timeoutRef.current);// Handle autoPlay
+  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
         goToNext();
       }, autoPlayInterval);
     };
