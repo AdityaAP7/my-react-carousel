@@ -162,6 +162,17 @@ c(index);
         setCurrentIndex(index);
       };
        // Handle autoPlay
+       // Handle autoPlay
+  useEffect(() => {if (!autoPlay) return;
+    resetAutoPlay(); rt PropTypes from 'prop-types';
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay]);
+                       setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay]);
+  const resetAutoPlay = () => {
+      
   useEffect(() => {if (!autoPlay) return;
     resetAutoPlay(); rt PropTypes from 'prop-types';
     return () => clearTimeout(timeoutRef.current);
