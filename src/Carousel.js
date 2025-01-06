@@ -24,7 +24,12 @@ import React, { useState, useEffect, useRef } from 'react';// Jump to specific i
 import PropTypes from 'prop-types';               
                                         from 'prop-types';
                                       rt PropTypes from 'prop-types';
-                                         return () => clearTimeout(timeoutRef.current);// Handle autoPlay
+                     ropTypes from 'prop-types';
+import PropTypes from 'prop-type
+
+const Carousel = ({
+    children,
+    autoPlay = false,                    return () => clearTimeout(timeoutRef.current);// Handle autoPlay
   useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
       };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
 import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
