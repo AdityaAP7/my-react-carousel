@@ -55,7 +55,12 @@ const Carousel = ({
         // Move to previous slide
    const goToPrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0
+      prevIndex === 0            
+  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
+     Types from 'prop-types';
+            };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
+import PropTypes from 'prop-types';         
         ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
         : prevIndex - 1
     );
