@@ -65,6 +65,12 @@ import React, { useState, useEffect, useRef } from 'react';// Jump to specific i
 import PropTypes from 'prop-types';
                      
 
+const Carousel = ({
+    children,
+    autoPlay = false,
+    autoPlayInterval = 3000,
+    showArrows = true,
+    showIndicators = true,
 
 const Carousel = ({
 
