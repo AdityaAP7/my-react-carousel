@@ -56,14 +56,7 @@ const Carousel = ({
    const goToPrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0            
-  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
-     Types from 'prop-types';
-            };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
-import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
-import PropTypes from 'prop-types';         
-        ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
-        : prevIndex - 1
-    );
+c
   };   const goToPrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0
@@ -124,7 +117,14 @@ const Carousel = ({
   };
     setCurrentIndex((prevIndex) =>
       prevIndex === React.Children.count(children) - 1
-        ? (infiniteLoop ? 0 : prevIndex)
+        ? (infiniteLoop ? 0 : prevIndex)  useEffect(() => {if (!autoPlay) return;setCurrentIndex(index);
+     Types from 'prop-types';
+            };const goToIndex = (index) => {import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';// Jump to specific index
+import PropTypes from 'prop-types';         
+        ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
+        : prevIndex - 1
+    );
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === React.Children.count(children) - 1
