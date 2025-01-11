@@ -63,7 +63,10 @@ c
         ? (infiniteLoop ? React.Children.count(children) - 1 : 0)
         : prevIndex - 1
     );
-  };
+  };   const goToPrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0            
+c
      ...props
   }) => {
      ...props
