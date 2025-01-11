@@ -172,7 +172,11 @@ c(index);
     resetAutoPlay(); rt PropTypes from 'prop-types';
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay]);
-                       setCurrentIndex((prevIndex) =>
+                 // Move to previous slide
+   const goToPrev = () => {
+    setCurrentIndex((prevIndex) =>
+        rt PropTypes from 'prop-types';
+                                             setCurrentIndex((prevIndex) =>
         rt PropTypes from 'prop-types';
     return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay]);
