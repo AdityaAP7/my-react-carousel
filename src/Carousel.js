@@ -230,7 +230,14 @@ return (
                      {child}
             </div>
           );     </div>
-      {showArrows && (
+      {showArrows && (  // Move to next slide
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === React.Children.count(children) - 1
+        ? (infiniteLoop ? 0 : prevIndex)
+        : prevIndex + 1
+    );
+  };
         <>
         })}
       </div>
