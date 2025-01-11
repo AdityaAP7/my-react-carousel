@@ -28,3 +28,12 @@ const Carousel = ({
   /**
    * Moves to the next slide.
    */
+ const goToNext = () => {
+    setCurrentIndex((prevIndex) => {
+      // If at last slide, either loop back or stay there
+      if (prevIndex === totalSlides - 1) {
+        return infiniteLoop ? 0 : prevIndex;
+      }
+      return prevIndex + 1;
+    });
+  };
