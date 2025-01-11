@@ -34,6 +34,26 @@ const Carousel = ({
       if (prevIndex === totalSlides - 1) {
         return infiniteLoop ? 0 : prevIndex;
       }
+
+      /**
+   * Moves to the previous slide.
+   */
+  const goToPrev = () => {
+    setCurrentIndex((prevIndex) => {
+      // If at first slide, either loop to last or stay there
+      if (prevIndex === 0) {
+        return infiniteLoop ? totalSlides - 1 : 0;
+      }
+      return prevIndex - 1;
+    });
+  };
+
+  /**
+   * Moves directly to a specific slide index.
+   */
+  const goToIndex = (index) => {
+    setCurrentIndex(index);
+  };
       return prevIndex + 1;
     });
   };
