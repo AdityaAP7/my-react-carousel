@@ -79,3 +79,5 @@ useEffect(() => {
     }
    return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay, autoPlayInterval]);
+ return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay, autoPlayInterval]);
