@@ -50,6 +50,10 @@ const Carousel = ({
 
   /**
    * Moves directly to a specific slide index.
+  */
+  const goToIndex = (index) => {
+    setCurrentIndex(index);
+  };
    */
   const goToIndex = (index) => {
     setCurrentIndex(index);
