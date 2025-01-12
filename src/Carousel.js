@@ -65,7 +65,10 @@ const Carousel = ({
     }, autoPlayInterval);
   };
   };
-
+ /**
+   * Handle autoPlay whenever currentIndex or autoPlay changes.
+   * Clears the timeout on unmount and on re-render.
+   */
   /**
    * Resets (clears) the current timeout and starts a new one.
    * This is used for automatically advancing slides when autoPlay is true.
