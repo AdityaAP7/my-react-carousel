@@ -84,3 +84,7 @@ useEffect(() => {
   useEffect(() => {
     return () => clearTimeout(timeoutRef.current);
   }, []);
+return (
+    <div className="carousel-container" {...props}>
+      {/* Slide wrapper */}
+      <div className="carousel-track">
