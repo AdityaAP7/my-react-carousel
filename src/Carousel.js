@@ -80,4 +80,7 @@ useEffect(() => {
    return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay, autoPlayInterval]);
  return () => clearTimeout(timeoutRef.current);
-  }, [currentIndex, autoPlay, autoPlayInterval]);
+  }, [currentIndex, autoPlay, autoPlayInterval]);// Clear timeout if the component unmounts
+  useEffect(() => {
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
