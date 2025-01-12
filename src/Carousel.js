@@ -58,7 +58,8 @@ const Carousel = ({
   const goToIndex = (index) => {
     setCurrentIndex(index);
   };
-      return prevIndex + 1;
+      return prevIndex + 1;  const resetAutoPlay = () => {
+    clearTimeout(timeoutRef.current);
     });
   };
 
