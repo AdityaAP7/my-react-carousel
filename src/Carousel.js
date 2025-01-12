@@ -60,7 +60,10 @@ const Carousel = ({
   };
       return prevIndex + 1;  const resetAutoPlay = () => {
     clearTimeout(timeoutRef.current);
-    });
+    });timeoutRef.current = setTimeout(() => {
+      goToNext();
+    }, autoPlayInterval);
+  };
   };
 
   /**
