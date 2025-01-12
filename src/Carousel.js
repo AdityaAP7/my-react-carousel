@@ -61,3 +61,8 @@ const Carousel = ({
       return prevIndex + 1;
     });
   };
+
+  /**
+   * Resets (clears) the current timeout and starts a new one.
+   * This is used for automatically advancing slides when autoPlay is true.
+   */
