@@ -88,3 +88,14 @@ return (
     <div className="carousel-container" {...props}>
       {/* Slide wrapper */}
       <div className="carousel-track">
+  {React.Children.map(children, (child, index) => (
+          <div
+            className="carousel-slide"
+            style={{
+              transform: `translateX(${(index - currentIndex) * 100}%)`,
+            }}
+          >
+            {child}
+          </div>
+        ))}
+      </div>
