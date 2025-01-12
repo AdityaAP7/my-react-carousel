@@ -77,4 +77,5 @@ useEffect(() => {
     if (autoPlay) {
       resetAutoPlay();
     }
-  
+   return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex, autoPlay, autoPlayInterval]);
