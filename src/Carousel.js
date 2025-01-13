@@ -109,4 +109,7 @@ return (
             ❯
           </button>
         </>
-      )}
+      )} const goToNext = () => {
+    setCurrentIndex((prevIndex) => {
+      // If at last slide, either loop back or stay there
+      if (prevIndex === totalSlides - 1) {
