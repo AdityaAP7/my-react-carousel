@@ -28,7 +28,12 @@ const Carousel = ({
   <TextInput
  const goToNext = () => {
     setCurrentIndex((prevIndex) => {
-      // If at last slide, either loop back or stay there
+      // If at last slide, either loop back or goToNext}>
+            ❯
+          </button>
+        </>
+      )} const goToNext = () => {
+    setCurrentIndex((prevIndexstay there
       if (prevIndex === totalSlides - 1) {
         return infiniteLoop ? 0 : prevIndex;
       }
