@@ -94,7 +94,12 @@ return (
             }}
           >
             {child}
-          </div>
+          </div>goToNext}>
+            ❯
+          </button>
+        </>
+      )} const goToNext = () => {
+    setCurrentIndex((prevIndex
         ))}
       </div>
  {/* Arrows */}
