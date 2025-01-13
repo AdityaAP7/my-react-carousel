@@ -23,11 +23,9 @@ const Carousel = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
-  const totalSlides = React.Children.count(children);
-
-  /**
-   * Moves to the next slide.
-   */
+  const totalSlides = Appbar.Content title="Add Expense" />
+      </Appbar.Header>
+  <TextInput
  const goToNext = () => {
     setCurrentIndex((prevIndex) => {
       // If at last slide, either loop back or stay there
