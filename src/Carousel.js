@@ -23,27 +23,27 @@ const Carousel = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
-  const totalSlides = Appbar.Content title="Add Expense" />
-      </Appbar.Header>
-  <TextInput
- const goToNext = () => {
+
+  // The total number of slides
+  const totalSlides = React.Children.count(children);
+
+  /**
+   * Moves to the next slide.
+   */
+  const goToNext = () => {
     setCurrentIndex((prevIndex) => {
-      // If at last slide, either loop back or goToNext}>
-            ❯
-          </button>
-        </>
-      )} const goToNext = () => {
-    setCurrentIndex((prevIndexstay there
       if (prevIndex === totalSlides - 1) {
         return infiniteLoop ? 0 : prevIndex;
       }
+      return prevIndex + 1;
+    });
+  };
 
-      /**
+  /**
    * Moves to the previous slide.
    */
   const goToPrev = () => {
     setCurrentIndex((prevIndex) => {
-      // If at first slide, either loop to last or stay there
       if (prevIndex === 0) {
         return infiniteLoop ? totalSlides - 1 : 0;
       }
@@ -53,61 +53,56 @@ const Carousel = ({
 
   /**
    * Moves directly to a specific slide index.
-  */
-  const goToIndex = (index) => {
-    setCurrentIndex(index);
-  };
    */
   const goToIndex = (index) => {
     setCurrentIndex(index);
   };
-      return prevIndex + 1;  const resetAutoPlay = () => {
+
+  /**
+   * Clears the existing timeout and sets a new one
+   * (for autoPlay functionality).
+   */
+  const resetAutoPlay = () => {
     clearTimeout(timeoutRef.current);
-    });timeoutRef.current = setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       goToNext();
     }, autoPlayInterval);
   };
-  };
- /**
-   * Handle autoPlay whenever currentIndex or autoPlay changes.
-   * Clears the timeout on unmount and on re-render.
-   */
+
   /**
-   * Resets (clears) the current timeout and starts a new one.
-   * This is used for automatically advancing slides when autoPlay is true.
+   * Run autoPlay effect when currentIndex, autoPlay, or autoPlayInterval changes.
+   * Clear timeout on unmount.
    */
-useEffect(() => {
+  useEffect(() => {
     if (autoPlay) {
       resetAutoPlay();
     }
-   return () => clearTimeout(timeoutRef.current);
+    return () => clearTimeout(timeoutRef.current);
   }, [currentIndex, autoPlay, autoPlayInterval]);
- return () => clearTimeout(timeoutRef.current);
-  }, [currentIndex, autoPlay, autoPlayInterval]);// Clear timeout if the component unmounts
+
+  // Clear the timeout if the component unmounts.
   useEffect(() => {
     return () => clearTimeout(timeoutRef.current);
   }, []);
-return (
+
+  return (
     <div className="carousel-container" {...props}>
-      {/* Slide wrapper */}
+      {/* Track that holds all slides */}
       <div className="carousel-track">
-  {React.Children.map(children, (child, index) => (
+        {React.Children.map(children, (child, index) => (
           <div
+            key={index}
             className="carousel-slide"
             style={{
               transform: `translateX(${(index - currentIndex) * 100}%)`,
             }}
           >
             {child}
-          </div>goToNext}>
-            ❯
-          </button>
-        </>
-      )} const goToNext = () => {
-    setCurrentIndex((prevIndex
+          </div>
         ))}
       </div>
- {/* Arrows */}
+
+      {/* Arrows for navigation */}
       {showArrows && (
         <>
           <button className="arrow prev" onClick={goToPrev}>
@@ -117,7 +112,33 @@ return (
             ❯
           </button>
         </>
-      )} const goToNext = () => {
-    setCurrentIndex((prevIndex) => {
-      // If at last slide, either loop back or stay there
-      if (prevIndex === totalSlides - 1) {
+      )}
+
+      {/* Indicators (optional) */}
+      {showIndicators && (
+        <div className="carousel-indicators">
+          {React.Children.map(children, (_child, index) => (
+            <button
+              key={index}
+              className={`indicator ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => goToIndex(index)}
+            >
+              •
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+Carousel.propTypes = {
+  children: PropTypes.node.isRequired,
+  autoPlay: PropTypes.bool,
+  autoPlayInterval: PropTypes.number,
+  showArrows: PropTypes.bool,
+  showIndicators: PropTypes.bool,
+  infiniteLoop: PropTypes.bool,
+};
+
+export default Carousel;
