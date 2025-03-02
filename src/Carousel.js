@@ -16,3 +16,4 @@ const Carousel = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
+  const totalSlides = Children.count(children);
