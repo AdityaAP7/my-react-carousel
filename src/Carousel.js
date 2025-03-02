@@ -11,3 +11,4 @@ const Carousel = ({
   autoPlayInterval = 3000,
   showArrows = true,
   showIndicators = true,
+  infiniteLoop = false,
