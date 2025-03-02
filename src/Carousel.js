@@ -7,3 +7,4 @@ import PropTypes from 'prop-types';
  */
 const Carousel = ({
   children,
+  autoPlay = false,
