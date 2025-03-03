@@ -23,3 +23,4 @@ const Carousel = ({
       if (newIndex >= totalSlides) return infiniteLoop ? 0 : prevIndex;
       return newIndex;
  });
+  // Helper function to update the current index with optional loop behavior
