@@ -41,3 +41,4 @@ const Carousel = ({
       }
       // Set up the next slide change
       timeoutRef.current = setTimeout(() => {
+        updateIndex(currentIndex + 1);
