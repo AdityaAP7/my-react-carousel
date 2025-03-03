@@ -32,3 +32,4 @@ const Carousel = ({
       return newIndex;
     });
   };
+  // Auto-play effect
