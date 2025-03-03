@@ -31,3 +31,4 @@ const Carousel = ({
 }
       return newIndex;
     });
+  };
