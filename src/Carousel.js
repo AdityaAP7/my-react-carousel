@@ -24,3 +24,4 @@ const Carousel = ({
       return newIndex;
  });
   // Helper function to update the current index with optional loop behavior
+  const updateIndex = (newIndex) => {
