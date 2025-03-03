@@ -36,3 +36,4 @@ const Carousel = ({
   useEffect(() => {
     if (autoPlay) {
       // Clear any existing timeout
+      if (timeoutRef.current) {
