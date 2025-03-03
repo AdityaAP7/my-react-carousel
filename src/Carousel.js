@@ -28,3 +28,4 @@ const Carousel = ({
     setCurrentIndex((prevIndex) => {
       if (newIndex < 0) {
         return infiniteLoop ? totalSlides - 1 : prevIndex;
+}
