@@ -66,3 +66,4 @@ const Carousel = ({
       )}
       {/* Slides */}
       <div className="carousel-slides">
+        {Children.map(children, (child, index) => (
