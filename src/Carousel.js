@@ -51,3 +51,4 @@ const Carousel = ({
       };
  }
   }, [autoPlay, autoPlayInterval, currentIndex]);
+  return (
