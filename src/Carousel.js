@@ -72,3 +72,4 @@ const Carousel = ({
             style={{
               display: index === currentIndex ? 'block' : 'none',
             }}
+          >
