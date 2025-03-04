@@ -62,3 +62,4 @@ const Carousel = ({
           <button onClick={() => updateIndex(currentIndex + 1)}>
             Next
           </button>
+        </div>
