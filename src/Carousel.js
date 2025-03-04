@@ -71,3 +71,4 @@ const Carousel = ({
             className="carousel-slide"
             style={{
               display: index === currentIndex ? 'block' : 'none',
+            }}
