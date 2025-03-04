@@ -58,3 +58,4 @@ const Carousel = ({
         <div className="carousel-arrows">
           <button onClick={() => updateIndex(currentIndex - 1)}>
             Prev
+          </button>
