@@ -49,3 +49,4 @@ const Carousel = ({
           clearTimeout(timeoutRef.current);
         }
       };
+ }
