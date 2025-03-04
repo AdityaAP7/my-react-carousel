@@ -73,3 +73,4 @@ const Carousel = ({
               display: index === currentIndex ? 'block' : 'none',
             }}
           >
+            {child}
