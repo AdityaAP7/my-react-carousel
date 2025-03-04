@@ -45,3 +45,4 @@ const Carousel = ({
       }, autoPlayInterval);
       // Clean up on unmount or when dependencies change
       return () => {
+        if (timeoutRef.current) {
