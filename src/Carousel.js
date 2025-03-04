@@ -74,3 +74,4 @@ const Carousel = ({
             }}
           >
             {child}
+          </div>
