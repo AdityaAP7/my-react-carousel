@@ -44,3 +44,4 @@ const Carousel = ({
         updateIndex(currentIndex + 1);
       }, autoPlayInterval);
       // Clean up on unmount or when dependencies change
+      return () => {
