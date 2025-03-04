@@ -48,3 +48,4 @@ const Carousel = ({
         if (timeoutRef.current) {
           clearTimeout(timeoutRef.current);
         }
+      };
