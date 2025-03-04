@@ -55,3 +55,4 @@ const Carousel = ({
     <div className="carousel-container" {...props}>
       {/* Arrows */}
       {showArrows && (
+        <div className="carousel-arrows">
