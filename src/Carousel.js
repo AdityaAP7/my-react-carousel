@@ -83,3 +83,4 @@ const Carousel = ({
 };
   return (
  <button
+ role="tab"
