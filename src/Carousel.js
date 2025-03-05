@@ -81,3 +81,4 @@ const Carousel = ({
     // if (e.key === 'ArrowRight') { ... }
     // if (e.key === 'ArrowLeft') { ... }
 };
+  return (
