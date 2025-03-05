@@ -80,3 +80,4 @@ const Carousel = ({
     // Example: handle arrow key navigation if needed
     // if (e.key === 'ArrowRight') { ... }
     // if (e.key === 'ArrowLeft') { ... }
+};
