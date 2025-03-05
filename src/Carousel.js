@@ -76,3 +76,4 @@ const Carousel = ({
             {child}
           </div>
  const handleKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
+    if (disabled) return;
