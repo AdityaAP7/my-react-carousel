@@ -77,3 +77,4 @@ const Carousel = ({
           </div>
  const handleKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
     if (disabled) return;
+    // Example: handle arrow key navigation if needed
