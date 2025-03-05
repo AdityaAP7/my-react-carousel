@@ -84,3 +84,4 @@ const Carousel = ({
   return (
  <button
  role="tab"
+ id={id}
