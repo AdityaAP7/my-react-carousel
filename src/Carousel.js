@@ -10,3 +10,4 @@ const Carousel = ({
  children,
   autoPlay = false,
   autoPlayInterval = 3000,
+  showArrows = true,
