@@ -6,3 +6,4 @@ import PropTypes from 'prop-types';
  *
  * @param {object} props - Carousel properties.
  */
+const Carousel = ({
