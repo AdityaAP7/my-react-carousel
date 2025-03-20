@@ -39,3 +39,4 @@ const Carousel = ({
   }
   };
   // Auto-play effect
+  useEffect(() => {
