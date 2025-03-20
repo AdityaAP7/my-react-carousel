@@ -31,3 +31,4 @@ const Carousel = ({
   });
  };
   // Handle keyboard navigation (e.g., arrow keys)
+  const handleKeyDown = (e) => {
