@@ -35,3 +35,4 @@ const Carousel = ({
     if (e.key === 'ArrowLeft') {
       updateIndex(currentIndex - 1);
     } else if (e.key === 'ArrowRight') {
+      updateIndex(currentIndex + 1);
