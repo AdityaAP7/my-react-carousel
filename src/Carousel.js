@@ -20,3 +20,4 @@ const Carousel = ({
   const totalSlides = Children.count(children);
   // Update the current index with optional loop behavior
   const updateIndex = (newIndex) => {
+    setCurrentIndex((prevIndex) => {
