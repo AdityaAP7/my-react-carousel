@@ -34,3 +34,4 @@ const Carousel = ({
   const handleKeyDown = (e) => {
     if (e.key === 'ArrowLeft') {
       updateIndex(currentIndex - 1);
+    } else if (e.key === 'ArrowRight') {
