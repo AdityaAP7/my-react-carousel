@@ -5,3 +5,4 @@ import PropTypes from 'prop-types';
  * Carousel Component
  *
  * @param {object} props - Carousel properties.
+ */
