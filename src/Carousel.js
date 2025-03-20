@@ -28,3 +28,4 @@ const Carousel = ({
         return infiniteLoop ? 0 : prevIndex;
 }
       return newIndex;
+  });
