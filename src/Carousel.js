@@ -37,3 +37,4 @@ const Carousel = ({
     } else if (e.key === 'ArrowRight') {
       updateIndex(currentIndex + 1);
   }
+  };
