@@ -14,3 +14,4 @@ const Carousel = ({
   showIndicators = true,
   infiniteLoop = false,
   ...props
+}) => {
