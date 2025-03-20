@@ -15,3 +15,4 @@ const Carousel = ({
   infiniteLoop = false,
   ...props
 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
