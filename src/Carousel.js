@@ -30,3 +30,4 @@ const Carousel = ({
       return newIndex;
   });
  };
+  // Handle keyboard navigation (e.g., arrow keys)
