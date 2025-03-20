@@ -21,3 +21,4 @@ const Carousel = ({
   // Update the current index with optional loop behavior
   const updateIndex = (newIndex) => {
     setCurrentIndex((prevIndex) => {
+      if (newIndex < 0) {
