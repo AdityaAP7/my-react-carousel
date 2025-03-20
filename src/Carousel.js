@@ -33,3 +33,4 @@ const Carousel = ({
   // Handle keyboard navigation (e.g., arrow keys)
   const handleKeyDown = (e) => {
     if (e.key === 'ArrowLeft') {
+      updateIndex(currentIndex - 1);
