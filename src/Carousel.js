@@ -19,3 +19,4 @@ const Carousel = ({
   const timeoutRef = useRef(null);
   const totalSlides = Children.count(children);
   // Update the current index with optional loop behavior
+  const updateIndex = (newIndex) => {
