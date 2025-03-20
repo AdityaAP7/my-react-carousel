@@ -29,3 +29,4 @@ const Carousel = ({
 }
       return newIndex;
   });
+ };
