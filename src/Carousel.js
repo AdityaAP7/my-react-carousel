@@ -38,3 +38,4 @@ const Carousel = ({
       updateIndex(currentIndex + 1);
   }
   };
+  // Auto-play effect
