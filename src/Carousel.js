@@ -26,3 +26,4 @@ const Carousel = ({
 }
       if (newIndex >= totalSlides) {
         return infiniteLoop ? 0 : prevIndex;
+}
