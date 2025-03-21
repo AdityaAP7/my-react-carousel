@@ -53,3 +53,4 @@ const Carousel = ({
     return () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
+}
