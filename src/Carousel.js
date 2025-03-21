@@ -63,3 +63,4 @@ const Carousel = ({
       onKeyDown={handleKeyDown}
       tabIndex={0} // Makes div focusable so key events will be detected
       {/* Arrows */}
+      {showArrows && (
