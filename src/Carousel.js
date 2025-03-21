@@ -45,3 +45,4 @@ const Carousel = ({
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
    }
+    // Set up the next slide change
