@@ -52,3 +52,4 @@ const Carousel = ({
     // Clean up on unmount or when dependencies change
     return () => {
       if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
