@@ -55,7 +55,7 @@ const Carousel = ({
         clearTimeout(timeoutRef.current);
 }      {...props}
 
- };
+ };  >
   }, [autoPlay, autoPlayInterval, currentIndex]);
   return (
     <div
