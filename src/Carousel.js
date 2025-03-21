@@ -58,3 +58,4 @@ const Carousel = ({
   }, [autoPlay, autoPlayInterval, currentIndex]);
   return (
     <div
+      className="carousel-container"
