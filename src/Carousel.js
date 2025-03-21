@@ -64,3 +64,4 @@ const Carousel = ({
       tabIndex={0} // Makes div focusable so key events will be detected
       {/* Arrows */}
       {showArrows && (
+        <div className="carousel-arrows">
