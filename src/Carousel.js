@@ -60,3 +60,4 @@ const Carousel = ({
     <div
       className="carousel-container"
       onKeyDown={handleKeyDown}
+      tabIndex={0} // Makes div focusable so key events will be detected
