@@ -59,3 +59,4 @@ const Carousel = ({
   return (
     <div
       className="carousel-container"
+      onKeyDown={handleKeyDown}
