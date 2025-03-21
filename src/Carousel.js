@@ -55,3 +55,4 @@ const Carousel = ({
         clearTimeout(timeoutRef.current);
 }
  };
+  }, [autoPlay, autoPlayInterval, currentIndex]);
