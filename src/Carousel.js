@@ -70,3 +70,4 @@ const Carousel = ({
         </div>
       )}
       {/* Slides */}
+      <div className="carousel-slides">
