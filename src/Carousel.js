@@ -93,3 +93,4 @@ const Carousel = ({
             >
               {index + 1}
             </button>
+          ))}
