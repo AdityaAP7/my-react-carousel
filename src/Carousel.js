@@ -91,3 +91,4 @@ const Carousel = ({
               onClick={() => updateIndex(index)}
               style={{ opacity: index === currentIndex ? 1 : 0.5 }}
             >
+              {index + 1}
