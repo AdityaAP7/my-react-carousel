@@ -85,3 +85,4 @@ const Carousel = ({
       {/* Indicators */}
       {showIndicators && (
         <div className="carousel-indicators">
+          {Array.from({ length: totalSlides }, (_, index) => (
