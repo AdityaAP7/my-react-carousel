@@ -105,3 +105,4 @@ Carousel.propTypes = {
   autoPlayInterval: PropTypes.number,
   showArrows: PropTypes.bool,
   showIndicators: PropTypes.bool,
+  infiniteLoop: PropTypes.bool,
