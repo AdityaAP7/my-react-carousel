@@ -103,3 +103,4 @@ Carousel.propTypes = {
   children: PropTypes.node.isRequired,
   autoPlay: PropTypes.bool,
   autoPlayInterval: PropTypes.number,
+  showArrows: PropTypes.bool,
