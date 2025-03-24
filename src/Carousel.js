@@ -92,3 +92,4 @@ const Carousel = ({
               style={{ opacity: index === currentIndex ? 1 : 0.5 }}
             >
               {index + 1}
+            </button>
