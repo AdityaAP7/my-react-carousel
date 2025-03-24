@@ -107,3 +107,4 @@ Carousel.propTypes = {
   showIndicators: PropTypes.bool,
   infiniteLoop: PropTypes.bool,
 };
+export default Carousel;
