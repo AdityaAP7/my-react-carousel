@@ -82,3 +82,4 @@ const Carousel = ({
           </div>
         ))}
       </div>
+      {/* Indicators */}
