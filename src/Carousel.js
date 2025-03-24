@@ -88,3 +88,4 @@ const Carousel = ({
           {Array.from({ length: totalSlides }, (_, index) => (
             <button
               key={index}
+              onClick={() => updateIndex(index)}
