@@ -100,3 +100,4 @@ const Carousel = ({
   );
 };
 Carousel.propTypes = {
+  children: PropTypes.node.isRequired,
