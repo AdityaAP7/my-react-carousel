@@ -90,3 +90,4 @@ const Carousel = ({
               key={index}
               onClick={() => updateIndex(index)}
               style={{ opacity: index === currentIndex ? 1 : 0.5 }}
+            >
