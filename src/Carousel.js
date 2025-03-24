@@ -106,3 +106,4 @@ Carousel.propTypes = {
   showArrows: PropTypes.bool,
   showIndicators: PropTypes.bool,
   infiniteLoop: PropTypes.bool,
+};
