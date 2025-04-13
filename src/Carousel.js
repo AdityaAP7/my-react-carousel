@@ -1,7 +1,7 @@
 qimport React, { useState, useEffect, useRef, Children } from 'react';
 w
 e
-tyu
+tyui
 import PropTypes from 'prop-types';
 /**
  * Carousel Component
