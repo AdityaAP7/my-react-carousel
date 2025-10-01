@@ -1,6 +1,6 @@
  React, { useState, useEffect, useRef, Children } from 'react';
 
-12345
+123456
 import PropTypes from 'prop-types';
 /**
  * Carousel Component
