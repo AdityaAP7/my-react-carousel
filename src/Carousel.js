@@ -1,7 +1,6 @@
-87654321987654321987655432121 React, { useState, useEffect, useRef, Children } from 'react';
-w2341
-e123456789
-tyui11
+ React, { useState, useEffect, useRef, Children } from 'react';
+
+1
 import PropTypes from 'prop-types';
 /**
  * Carousel Component
