@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 
 
 
-
 /**
  * Carousel Component
  *
