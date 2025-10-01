@@ -2,6 +2,12 @@
 
 1234567890
 import PropTypes from 'prop-types';
+
+
+
+import PropTypes from 'prop-types';
+
+
 /**
  * Carousel Component
  *
